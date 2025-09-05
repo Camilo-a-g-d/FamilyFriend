@@ -1,0 +1,104 @@
+.main-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* ocupa toda la pantalla */
+  background: linear-gradient(180deg, #5fb8ff, #3d7dfc);
+  text-align: center;
+  padding: 20px;
+}
+
+.box-item {
+  max-width: 400px; /* control de ancho en pantallas grandes */
+  width: 100%;
+}
+
+.app-logo {
+  max-width: 60%;
+  margin-bottom: 70px;
+
+}
+
+.app-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.app-description {
+  font-size: 1rem;
+  color: #222;
+  margin: 15px 0 30px;
+  line-height: 1.5;
+  margin-bottom: 69px;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: #fff;
+  color: #3d7dfc;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 12px 40px;
+  border-radius: 25px;
+  border: 2px solid #3d7dfc;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.btn-primary:hover {
+  background: #3d7dfc;
+  color: #fff;
+}
+
+.link-secondary {
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.link-secondary:hover {
+  color: #dceeff;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .app-logo {
+    max-width: 60%;
+  }
+
+  .app-title {
+    font-size: 1.6rem;
+  }
+
+  .app-description {
+    font-size: 0.95rem;
+  }
+
+  .btn-primary {
+    font-size: 1rem;
+    padding: 10px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-logo {
+    max-width: 70%;
+  }
+
+  .app-title {
+    font-size: 1.4rem;
+  }
+
+  .app-description {
+    font-size: 0.9rem;
+  }
+
+  .btn-primary {
+    font-size: 0.95rem;
+    padding: 8px 25px;
+  }
+}

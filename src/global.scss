@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 /*
  * App Global CSS
  * ----------------------------------------------------------------------------
@@ -34,4 +36,75 @@
 
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
-@import '@ionic/angular/css/palettes/dark.system.css';
+// @import '@ionic/angular/css/palettes/dark.system.css';
+
+
+/*
+=============================
+   Tema de la aplicación
+=============================
+*/
+* {
+  font-family: "Josefin Sans", sans-serif !important;
+}
+
+:root {
+  // Colores principales
+  --primary-color: #F15429;
+  --dark-color: #000;
+  --white-color: #FFF;
+  --light-color: #E6E6E6;
+}
+
+// Estilos básicos de las pantallas
+.screen-background {
+  --background: var(--dark-color);
+  --color: var(--white-color);
+}
+
+// Estilos para contenedor del icono
+.app-icon-container {
+  display: flex;
+  justify-content: center;
+}
+
+.app-icon-container img {
+  max-width: 70% !important;
+}
+
+.app-name-container {
+  text-align: center;
+}
+
+.app-author-container {
+  display: flex;
+  justify-content: end;
+  padding: 15px;
+}
+
+.app-author-container h4 {
+  color: var(--primary-color);
+}
+
+.btn {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 10px 60px;
+  background: var(--white-color);
+  color: var(--dark-color);
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.basic-border-radius {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.text-primary {
+  color: var(--primary-color);
+}

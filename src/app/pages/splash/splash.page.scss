@@ -1,0 +1,65 @@
+.main-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* ocupa toda la pantalla */
+  background: linear-gradient(180deg, #CCCCCC, #CCCCCC);
+  text-align: center;
+  overflow: hidden;
+}
+
+.box-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-logo {
+  max-width: 40%;   /* controla el tamaño relativo */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.app-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #F47054;
+  margin-bottom: 10px;
+}
+
+.app-subtitle {
+  font-size: 1rem;
+  font-style: italic;
+  color: #F47054;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .app-logo {
+    max-width: 60%;
+  }
+
+  .app-title {
+    font-size: 1.6rem;
+  }
+
+  .app-subtitle {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-logo {
+    max-width: 70%;
+  }
+
+  .app-title {
+    font-size: 1.3rem;
+  }
+
+  .app-subtitle {
+    font-size: 0.8rem;
+  }
+}
