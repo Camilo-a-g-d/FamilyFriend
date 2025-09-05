@@ -1,6 +1,6 @@
 /* Fondo degradado */
 .login-background {
-  --background: linear-gradient(180deg, #56B8F9 0%, #5178EE 100%);
+  --background: linear-gradient(180deg, #CCCCCC 0%, #CCCCCC 100%);
   height: 100vh; /* pantalla completa */
   display: flex;
   justify-content: center;
@@ -38,7 +38,7 @@
   font-size: 26px;
   font-weight: bold;
   margin-top: 10px;
-  color: #fff;
+  color: #F47054;
 }
 
 /* Texto */
@@ -46,7 +46,7 @@
   font-size: 16px;
   font-style: italic;
   margin: 20px 0;
-  color: #fff;
+  color: black;
 }
 
 /* Inputs*/
@@ -58,6 +58,7 @@
   padding: 12px;
   margin-bottom: 20px;
   width: 100%;
+  border: 4px solid #F47054;
 }
 
 .input-group .icon {
@@ -93,28 +94,30 @@
 
 /* Botón ingresar */
 .btn-primary {
-  width: 100%;
-  padding: 14px;
-  font-size: 16px;
-  border-radius: 25px;
-  border: none;
-  background: #fff;
-  color: #5178EE;
+  display: inline-block;
+  background: #F47054;
+  color: white;
+  font-size: 1.2rem;
   font-weight: bold;
-  cursor: pointer;
-  margin-top: 10px;
-  transition: 0.3s;
+  padding: 12px 40px;
+  border-radius: 25px;
+  border: 2px solid white;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+  width: 65%;
 }
 
 .btn-primary:hover {
-  background: #f1f1f1;
+  background: white;
+  color: #F47054;
 }
 
 /* Recuperar */
 .recuperar {
   margin-top: 12px;
   font-size: 14px;
-  color: #fff;
+  color: black;
   text-decoration: underline;
 }
 
@@ -125,7 +128,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #ccc;
+  border: 3px solid #F47054;
   border-radius: 25px;
   padding: 12px;
   font-size: 14px;
@@ -143,11 +146,11 @@
 .registro {
   margin-top: 20px;
   font-size: 14px;
-  color: #fff;
+  color: black;
 }
 
 .registro a {
-  color: #fff;
+  color: #F47054;
   font-weight: bold;
   text-decoration: underline;
 }

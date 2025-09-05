@@ -3,10 +3,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* ocupa toda la pantalla */
+  height: 100vh;
   background: linear-gradient(180deg, #CCCCCC, #CCCCCC);
   text-align: center;
   overflow: hidden;
+  position: relative; /* necesario para que el absolute funcione */
 }
 
 .box-item {
@@ -17,7 +18,7 @@
 }
 
 .app-logo {
-  max-width: 40%;   /* controla el tamaño relativo */
+  max-width: 30%;   /* controla el tamaño relativo */
   height: auto;
   margin-bottom: 20px;
 }
@@ -30,6 +31,9 @@
 }
 
 .app-subtitle {
+  position: absolute;
+  bottom: 20px;    /* distancia desde abajo */
+  right: 20px;     /* distancia desde la derecha */
   font-size: 1rem;
   font-style: italic;
   color: #F47054;

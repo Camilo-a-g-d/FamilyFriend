@@ -20,7 +20,7 @@ export class SplashPage implements OnInit, OnDestroy {
   ngOnInit() {
     this.splashTimer = setTimeout(() => {
       this.goToGome();
-    }, 2500);
+    }, 2000);
   }
 
   ngOnDestroy(): void {
